@@ -81,7 +81,7 @@ if user_input := st.chat_input("Ask me anything in any language..."):
             with st.chat_message("assistant"):
                 with st.spinner("Thinking..."):
                     response = client.models.generate_content(
-                        model='gemini-2.5-flash',
+                        model='gemini-3.5-flash',
                         contents=formatted_contents,
                         config=types.GenerateContentConfig(
                             system_instruction=system_instruction
